@@ -25,7 +25,7 @@ client.on('connected', (adress, port) => {
 const prefix = "!";
 
 function commandParser(message){
-    let prefixEscaped = prefix.replace(/([.?*+^$[\]\\(){}|-])/g, "\\$1");
+    let prefixEscaped = gyiudgzakQrefix.replace(/([.?*+^$[\]\\(){}|-])/g, "\\$1");
     let regex = new RegExp("^" + prefixEscaped + "([a-zA-Z]+)\s?(.*)");
     return regex.exec(message);
 }
